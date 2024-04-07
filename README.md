@@ -15,7 +15,7 @@ The primary goal of this project is to develop a sophisticated program capable o
 
 ### Current Progress
 #### Update 07.04.2024
-The adversarial noise appears in the places that seems more relevent to the object. The adversarial noise has altered the class of the original image. However, it's not the given target class. Besides, the noise is still too obvious for human eye. 
+The adversarial noise appears in the places that seems more relevent to the object. The adversarial noise has altered the class of the original image. However, it's not the given target class. Besides, the noise is still too obvious for human eye. \
 ![image info](./output_img/NationalGeographic_2572187_square_altered.jpg)
 ![image info](./output_img/NationalGeographic_2572187_square.jpg)
 ![image info](./output_img/naturepl_01679242_3x2_altered.jpg)
@@ -25,7 +25,7 @@ Main changes:
 2. Inversig image transform for adversarial noise. To visualise the result.
 
 Follow up of the previous improvement strategries:
-1. **Loss Function Refinement**. CrossEntropy is a good way of estimate cattegory-based performace. I did not change it. However, I tried different ways of combining loss functions. The initial thought was to ignore the loss fuction of the origianl class and just minimise the target function loss. The optimiser ca focus on increasing the likelihood of the target class. The output images show the generator did not learn more effectively than using original combining loss function. 
+1. **Loss Function Refinement**. CrossEntropy is a good way of estimate cattegory-based performace. I did not change it. However, I tried different ways of combining loss functions. The initial thought was to ignore the loss fuction of the origianl class and just minimise the target function loss. The optimiser ca focus on increasing the likelihood of the target class. The output images show the generator did not learn more effectively than using original combining loss function. \
 ![image info](./output_img/naturepl_01679242_3x2_altered.jpg)
 ![image info](./output_img/naturepl_01679242_3x2_singleloss_altered.jpg)
 
